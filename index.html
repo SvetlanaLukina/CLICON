@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoppingCard</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <nav class="Top_nav">
+            <div class="container">
+                <div class="Top">
+                    <p>Welcome to Clicon online eCommerce store. </p>
+                    <div class="contacts">
+                        <p>Follow us:</p>
+                        <a href="#">
+                            <img src="img/twitter.svg">
+                        </a>
+                        <a href="#">
+                            <img src="img/facebook.svg">
+                        </a>
+                        <a href="#">
+                            <img src="img/pinterest.svg">
+                        </a>
+                        <a href="#">
+                            <img src="img/hz.svg">
+                        </a>
+                        <a href="#">
+                            <img src="img/youtube.svg">
+                        </a>
+                        <a href="#">
+                            <img src="img/inst.svg">
+                        </a>
+                        <form class="nav_form">
+                            <select>
+                                <option>Eng</option>
+                                <option>Ru</option>
+                            </select>
+                            <select >
+                                <option>USD</option>
+                                <option>Russia</option>
+                                <option>Euro</option>
+                                <option>Liras</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="Middle_nav">
+            <div class="container">
+                <div class="Middle">
+                    <img src="img/Logo.svg" width="177px" height="48px" alt="logo">
+                    <div class="search">
+                        <input type="search" placeholder="Search for anything...">
+                    </div>
+                    </form>
+                    <div class="middle_icons">
+                        <button class="Middle_nav_btn">
+                            <img src="img/ShoppingCartSimple.svg">
+                        </button>
+                        <button class="Middle_nav_btn">
+                            <img src="img/Heart.svg">
+                        </button>
+                        <button class="Middle_nav_btn">
+                            <img src="img/User.svg">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="Bottom_nav">
+            <div class="container">
+                <div class="Bottom_nav_content">
+                    <div class="left_side">
+                        <select class="select">
+                            <option>All Category</option>
+                            <option>Computer & Laptop</option>
+                            <option>SmartPhone</option>
+                            <option>Accessories</option>
+                            <option>Camera & Photo</option>
+                        </select>
+                        <button type="button" class="Bottom_nav_btn">
+                            <img src="img/Vector1.svg" > Track  Order</button>
+                        <button type="button" class="Bottom_nav_btn">
+                            <img src="img/Vector2.svg"> Compare</button>
+                        <button type="button" class="Bottom_nav_btn">
+                            <img src="img/Vector3.svg">  Customer Support</button>
+                        <button  type="button" class="Bottom_nav_btn">
+                            <img src="img/Vector4.svg">  Need Help</button>
+                    </div>
+                    <div class="number">
+                        <img src="img/PhoneCall.svg">
+                        <p>+1-202-555-0104</p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="breadcumb">
+        <div class="container">
+            <ol class="breadcumb_content">
+                <li class="breadcumb_items"> <img src="img/House.svg" width="17px" height="17px"><a href=#> Home</a></li>
+                <li class="breadcumb_items"> <a href="#">Shopping Card</a></li>
+            </ol>
+        </div>
+    </div>
+    <main>
+        <div class="container">
+            <div class="main_shoping_card">
+                <table class="table">
+                    <caption class="caption_left">Shopping Card</caption>
+                    <tr class="ShoppingCard_main">
+                        <th class="prod">PRODUCTS</th>
+                        <th class="price">PRICE</th>
+                        <th class="quan">QUANTITY</th>
+                        <th class="quan">SUB-TOTAL</th>
+                    </tr>
+                    <tr>
+                            <td class="table_td" id="item">
+                            <button class="delete-btn" id="delete">+</button>
+                            <img src="img/tele.svg" alt="tele">
+                            <p class="text">4K UHD LED Smart TV with Chromecast Built-in</p></td>
+                            <td >
+                                <div class="priceval">
+                                    <p style="color: gray;"><s>$99</s></p>$70
+                                    <input type="hidden" id="price" value = "70">
+                                </input>
+                                </div>
+                            </td> 
+                            <td>
+                                 <div class="stepper">
+                                     <button class="stepper-btn" id="decrease">-</button>
+                                     <input type="text" id="quantity" value="1" readonly>
+                                     <button class="stepper-btn" id="increase">+</button>
+                                 </div>
+                            </td>
+                             <td id="infoPrice">
+                                <button id="totalprice" class="total_price" value="70">
+                                    <p>$70</p>
+                                </button>
+                            </td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="table_td" id="item2">
+                            <button class="delete-btn" id="delete2">+</button>
+                            <img src="img/headfuls.svg" alt="tele">
+                            <p class="text">Wired Over-Ear Gaming Headphones with USB</p></td>
+                        <td>
+                            <input id="price2" type="hidden" value="250"> $250 </input>
+                        </td>
+                        <td>
+                            <div class="stepper">
+                                <button class="stepper-btn" id="decr">-</button>
+                                <input type="text" id="quant" value="1" readonly>
+                                <button class="stepper-btn" id="incr">+</button>
+                            </div>
+                        </td>
+                        <td>
+                            <button id="totalprice2" class="total_price" value="250">$250</button>
+                        </td>
+                        
+                    </tr>
+    
+                </table>
+                <div class="buttons">
+                    <button type="button" class="btn_with_strelka">RETURN TO SHOP</button>
+                    <span id="error" style="color: red"></span>
+                    <button type="button" class="btn_without_strelka" id="Update">UPDATE CARD</button>
+                </div>  
+            </div>
+
+            <div class="tables_right">
+                <div class="main_card_totals">
+                    <table class="table_two">
+                        <caption class="caption_right">Card Totals</caption>
+                        <tr>
+                            <td class="text_gray">Sub-total</td>
+                            <td class="text_right"><button id="Sub-total" value="320">$320</button></td>
+                        </tr>
+                        <tr>
+                            <td class="text_gray">Shipping</td>
+                            <td class="text_right">Free</td>
+                        </tr>
+                        <tr>
+                            <td  class="text_gray"> Discount</td>
+                            <td class="text_right"><input type="hidden" id="DiscountInput" value="24">$24</td>
+                        </tr>
+                        <tr>
+                            <td class="text_gray">Tax</td>
+                            <td class="text_right"><input type="hidden" id="TaxInput" value="61.99">$61.99</input></td>
+                        </tr>
+                    </table>    
+                    <div class="div_text">
+                        <p>Total</p>
+                        <button  id="totalsum" value="357.99" class="div_text_right">$357.99&nbspUSD</button>
+                    </div>   
+                    <button type="button" class="btn_cardtotal">PROCEED TO CHECKOUT</button> 
+                </div>
+    
+                <form class="main_cupon">
+                    <h3 class="caption_right">Coupon Code</h3>
+                    <input class="main_cupon_email" id="couponInput" type="email" placeholder="Email address"><br></br>
+                    <button class="main_cupon_btn" id="couponBtn" type="button">APPLY COUPON</button>
+                    <span id="couponError" style="color: red"></span>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <div class="supports">
+                    <img src="img/Logo2.svg" alt="logo">
+                    <p>Customer Supports:</p>
+                    <h4>(629) 555-0129</h4>
+                    <p>4517 Washington Ave. Manchester, Kentucky 39495</p>
+                    <h4>info@kinbo.com</h4>
+                </div>
+                <div class="Category">
+                    <h4>Top Category</h4>
+                    <div class="foo">
+                        <img src="img/Devider.svg" class="hidden_img">
+                        <p>Computer & Laptop</p>
+                    </div>
+                    <div class="foo">
+                        <img src="img/Devider.svg" class="hidden_img">
+                        <p>SmartPhone</p>
+                    </div>
+                    <div class="foo">
+                        <img src="img/Devider.svg" class="hidden_img">
+                        <p>SmartPhone</p>
+                    </div>
+                    <div class="foo">
+                        <img src="img/Devider.svg" class="hidden_img">
+                        <p>Accessories</p>
+                    </div>
+                    <div class="foo">
+                        <img src="img/Devider.svg" class="hidden_img">
+                        <p>Camera & Photo</p>
+                    </div>
+                    <div class="foo">
+                        <img src="img/Devider.svg" class="hidden_img">
+                        <p>TV & Homes</p>
+                    </div>
+                    <button type="button">Browse All Product</button>
+                </div>
+                <div class="links">
+                    <h4>Quick links</h4>
+                    <a href="#">Shop Product</a>
+                    <a href="#">Shoping Cart</a>
+                    <a href="#">Wishlist</a>
+                    <a href="#">Compare</a>
+                    <a href="#">Track Order</a>
+                    <a href="#">Customer Help</a>
+                    <a href="#">About Us</a>
+                </div>
+                <div class="apps">
+                    <h4>Download APP</h4>
+                    <button type="button" class="apps_btn" id="btn_android">
+                        <p class="apps_btn_title">Get it now</p>
+                        <p class="apps_btn_text">Google Play</p>
+                    </button>
+                    <button type="button" class="apps_btn" id="btn_apple">
+                        <p class="apps_btn_title">Get it now</p>
+                        <p class="apps_btn_text">App Store<p>
+                    </button>
+                </div>
+                <div class="tags">
+                    <h4>Popular Tag</h4>
+                    <button type="button">Game</button>
+                    <button type="button">iPhone</button>
+                    <button type="button">TV</button>
+                    <button type="button">Asus Laptops</button>
+                    <button type="button">Macbook </button>
+                    <button type="button">SSD</button>
+                    <button type="button">Graphics Card </button>
+                    <button type="button">Power Bank </button>
+                    <button type="button">Smart TV</button>
+                    <button type="button">Speaker</button>
+                    <button type="button">Tablet</button>
+                    <button type="button">Microwave</button>
+                    <button type="button">Samsung</button>
+                </div>
+            </div>
+        </div>
+        <p class="end_text">Kinbo - eCommerce Template © 2021. Design by Templatecookie</p>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
